@@ -1,0 +1,139 @@
+var a=1000;
+undefined
+window.a
+1000
+window.add()
+VM48:1 Uncaught TypeError: window.add is not a function
+    at <anonymous>:1:8
+(anonymous) @ VM48:1
+function add(){}
+undefined
+window.add()
+undefined
+function disply(){
+     console.log('BEGINING ---z is ',z);
+    var z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        var z =2000;
+         console.log('z is ',z);
+    }
+    var z= 3000;
+     console.log('END--z is ',z);
+}
+undefined
+display()
+VM378:1 Uncaught ReferenceError: display is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM378:1
+disply()
+VM346:2 BEGINING ---z is  undefined
+VM346:4 START--z is  1000
+VM346:7 z is  2000
+VM346:10 END--z is  3000
+undefined
+var r;
+undefined
+r
+undefined
+function disply(){
+     console.log('BEGINING ---z is ',z);
+    let z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        let z =2000;
+         console.log('z is ',z);
+    }
+    let z= 3000;
+     console.log('END--z is ',z);
+}
+VM460:9 Uncaught SyntaxError: Identifier 'z' has already been declared
+function disply(){
+     console.log('BEGINING ---z is ',z);
+    let z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        let z =2000;
+         console.log('z is ',z);
+    }
+    // let z= 3000;
+     console.log('END--z is ',z);
+}
+undefined
+display();
+VM522:1 Uncaught ReferenceError: display is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM522:1
+disply();
+VM485:2 Uncaught ReferenceError: Cannot access 'z' before initialization
+    at disply (<anonymous>:2:38)
+    at <anonymous>:1:1
+disply @ VM485:2
+(anonymous) @ VM527:1
+function disply(){
+     // console.log('BEGINING ---z is ',z);
+    let z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        let z =2000;
+         console.log('z is ',z);
+    }
+    // let z= 3000;
+     console.log('END--z is ',z);
+}
+undefined
+disply();
+VM534:4 START--z is  1000
+VM534:7 z is  2000
+VM534:10 END--z is  1000
+undefined
+function disply(){
+     // console.log('BEGINING ---z is ',z);
+    let z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        let z =2000;
+         console.log('z is ',z);
+    }
+    // let z= 3000;
+     console.log('END--z is ',z);
+    return "priya"
+}
+undefined
+disply();
+VM558:4 START--z is  1000
+VM558:7 z is  2000
+VM558:10 END--z is  1000
+'priya'
+function disply(){
+     console.log('BEGINING ---z is ',z);
+    var z=1000;
+    console.log('START--z is ',z);
+    if(10>2){
+        var z =2000;
+         console.log('z is ',z);
+    }
+    // var z= 3000;
+     console.log('END--z is ',z);
+}
+undefined
+disply();
+VM593:2 BEGINING ---z is  undefined
+VM593:4 START--z is  1000
+VM593:7 z is  2000
+VM593:10 END--z is  2000
+undefined
+var a=100;
+undefined
+a=200
+200
+let b=700;
+undefined
+b=900
+900
+const d =500;
+undefined
+d=999
+VM753:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:2
+(anonymous) @ VM753:1
