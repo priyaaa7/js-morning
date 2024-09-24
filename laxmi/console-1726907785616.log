@@ -1,0 +1,23 @@
+function add(x,y){
+    console.log('x is ',x,' y is ',y)
+}
+undefined
+add(1,2)
+VM908:2 x is  1  y is  2
+undefined
+function add(x,y){
+    console.log('x is ',x,' y is ',y)
+    return "priya sharma"
+}
+undefined
+add(1,2)
+VM973:2 x is  1  y is  2
+'priya sharma'
+function add(x,y){
+    console.log('x is ',x,' y is ',y)
+    return x+y
+}
+undefined
+add(1,2)
+VM994:2 x is  1  y is  2
+3

@@ -1,0 +1,67 @@
+var a=10;
+undefined
+var b =200;
+undefined
+var c=300;
+undefined
+console.log("hello world!!!")
+VM212:1 hello world!!!
+undefined
+console.log("a is ", a,"b is ",b,"c is ",c)
+VM304:1 a is  10 b is  200 c is  300
+undefined
+console.log(`a is ${a} b is ${b} c is ${c}`)
+VM373:1 a is 10 b is 200 c is 300
+undefined
+a++
+10
+a
+11
+console.log(`a is ${a} b is ${b} c is ${c}`)
+VM408:1 a is 11 b is 200 c is 300
+undefined
+b="priya sharma"
+'priya sharma'
+console.log(`a is ${a} b is ${b} c is ${c}`)
+VM444:1 a is 11 b is priya sharma c is 300
+undefined
+typeof a
+'number'
+typeof b
+'string'
+var arr=[10,20,'priya']
+undefined
+typeof arr
+'object'
+arr.length
+3
+var o={name:"priya",id:22,department:"IT"}
+undefined
+typeof o
+'object'
+o.name
+'priya'
+o.id
+22
+arr instanceof array;
+VM821:1 Uncaught ReferenceError: array is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM821:1
+arr instanceof Array;
+true
+o instanceof Array
+false
+o instanceof Object
+true
+arr instanceof Object
+true
+var c=100
+undefined
+c+1
+101
+c
+100
+c++
+100
+c
+101

@@ -1,0 +1,145 @@
+var s="priya"
+undefined
+typeof s
+'string'
+var laxmi="pal"
+undefined
+typeof laxmi
+'string'
+s='sharma'
+'sharma'
+typeof s
+'string'
+s=`hello i am a string`
+'hello i am a string'
+typeof s
+'string'
+1+100
+101
+100+true
+101
+100-true
+99
+a=1000000
+1000000
+Number.MAX_SAFE_INTEGER
+9007199254740991
+a= 9007199254740991
+9007199254740991
+a+1
+9007199254740992
+a+1
+9007199254740992
+a+1
+9007199254740992
+a+1
+9007199254740992
+a= 900n
+900n
+typeof a
+'bigint'
+a= 9007199254740992n
+9007199254740992n
+a+1
+VM652:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:2
+(anonymous) @ VM652:1
+a++
+9007199254740992n
+a++
+9007199254740993n
+a++
+9007199254740994n
+a++
+9007199254740995n
+a++
+9007199254740996n
+a++
+9007199254740997n
+a++
+9007199254740998n
+"priya"+10
+'priya10'
+10+10
+20
+"ooo"+"iiii"
+'oooiiii'
+true+true
+2
+10n+90
+VM787:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:4
+(anonymous) @ VM787:1
+10+90
+100
+10n+90n
+100n
+typeof(100n)
+'bigint'
+var a=10;
+undefined
+var b=20;
+undefined
+var c=90
+undefined
+console.log("hello world")
+VM1012:1 hello world
+undefined
+"a is "+a+" b is "+b
+'a is 10 b is 20'
+`a is ${a} b is ${b}`
+'a is 10 b is 20'
+`a is ${a} b is ${b} c is ${c}`
+'a is 10 b is 20 c is 90'
+b="priya sharma"
+'priya sharma'
+`a is ${a} b is ${b} c is ${c}`
+'a is 10 b is priya sharma c is 90'
+`a is ${a} b is ${b} c is ${c}`
+'a is 10 b is priya sharma c is 90'
+var num=1000;
+undefined
+var digit=num;
+undefined
+digit
+1000
+digit=5555;
+5555
+digit
+5555
+num
+1000
+var digit=num;
+undefined
+digit
+1000
+num=2222;
+2222
+num
+2222
+digit
+1000
+num
+2222
+digit
+1000
+num=1000
+1000
+var arr=[10,20,30,40]
+undefined
+arr
+(4) [10, 20, 30, 40]0: 101: 202: 303: 40length: 4[[Prototype]]: Array(0)
+typeof arr
+'object'
+TYPEOF ARR
+VM1612:1 Uncaught SyntaxError: Unexpected identifier 'ARR'
+Number
+ƒ Number() { [native code] }
+typeof a
+'number'
+arr=[19,874,398,"priya","sharma"]
+(5) [19, 874, 398, 'priya', 'sharma']
+var o={name:"priya",id:22,department:"IT"}
+undefined
+typeof o
+'object'

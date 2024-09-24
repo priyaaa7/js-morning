@@ -1,0 +1,58 @@
+var a;
+undefined
+a;
+undefined
+var num=10000;
+undefined
+num
+10000
+typeof a
+'undefined'
+typeof num
+'number'
+num=20000000000000000000000
+2e+22
+typeof num
+'number'
+num=200.90798678
+200.90798678
+typeof num
+'number'
+var user='priya sharma'
+undefined
+typeof user
+'string'
+horse;
+VM546:1 Uncaught ReferenceError: horse is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM546:1
+var horse;
+undefined
+user =1000
+1000
+typeof user
+'number'
+user = `7988957`
+'7988957'
+typeof user
+'string'
+user = "7988957"
+'7988957'
+typeof user
+'string'
+user = '798895'
+'798895'
+typeof user
+'string'
+var b= true;
+undefined
+typeof b
+'boolean'
+var f =false;
+undefined
+typeof f
+'boolean'
+true+false
+1
+"true"+"false"
+'truefalse'

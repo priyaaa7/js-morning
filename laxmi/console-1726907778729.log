@@ -1,0 +1,286 @@
+function add(){
+    //code
+    var num=1000
+    console.log("my variable is",num);
+}
+undefined
+add();
+VM543:4 my variable is 1000
+undefined
+function show(){
+    //code
+    var num=1000
+    console.log("my variable is",num);
+}
+undefined
+show()
+VM575:4 my variable is 1000
+undefined
+function show(){
+    //code
+    var num=1000
+    var a=50
+}
+undefined
+function add(){
+    //code
+    var num=1000
+    var a=50
+    a+num;
+}
+undefined
+add()
+undefined
+function add(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+}
+undefined
+add()
+undefined
+function add(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+undefined
+add()
+1050
+typeof add
+'function'
+add
+ƒ add(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+var fn= function(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+undefined
+fn
+ƒ (){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+fn()
+1050
+function(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+VM804:1 Uncaught SyntaxError: Function statements require a function name
+var define= function(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+undefined
+var a=10
+undefined
+a
+10
+define
+ƒ (){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+}
+define();
+1050
+define()
+1050
+define()
+1050
+define()
+1050
+define()
+1050
+(function(){
+    //code
+    var num=1000
+    var a=50
+    var sum=a+num;
+    return sum;
+})();
+1050
+window
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+var a=100
+undefined
+a
+100
+console.log(a)
+VM1102:1 100
+undefined
+function display(){
+    var disp=2000;
+    console.log('inside fn',disp);
+}
+undefined
+display();
+disp;
+VM1242:3 inside fn 2000
+VM1284:2 Uncaught ReferenceError: disp is not defined
+    at <anonymous>:2:1
+(anonymous) @ VM1284:2
+disp
+VM1296:1 Uncaught ReferenceError: disp is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1296:1
+display
+ƒ display(){
+    var disp=2000;
+    console.log('inside fn',disp);
+}
+display=1000
+1000
+display
+1000
+typeof display
+'number'
+function display(){
+    var disp=2000;
+    console.log('inside fn',disp);
+}
+undefined
+typeof display
+'function'
+function calc(){
+    var add= function(x,y){
+        return x+y;
+    }
+    var sub=function(a,b){
+        return x-y;
+    }
+    return [add,sub];
+}
+undefined
+calc()
+(2) [ƒ, ƒ]0: ƒ (x,y)1: ƒ (a,b)length: 2[[Prototype]]: Array(0)
+var z=calc();
+undefined
+z
+(2) [ƒ, ƒ]0: ƒ (x,y)1: ƒ (a,b)length: 2[[Prototype]]: Array(0)
+z[0]
+ƒ (x,y){
+        return x+y;
+    }
+z[0](10,20)
+30
+z[1](10,20)
+VM1587:6 Uncaught ReferenceError: x is not defined
+    at Array.sub (<anonymous>:6:9)
+    at <anonymous>:1:5
+sub @ VM1587:6
+(anonymous) @ VM1720:1
+function calc(){
+    var add= function(x,y){
+        return x+y;
+    }
+    var sub=function(a,b){
+        return a-b;
+    }
+    return [add,sub];
+}
+undefined
+z[1](10,20)
+VM1587:6 Uncaught ReferenceError: x is not defined
+    at Array.sub (<anonymous>:6:9)
+    at <anonymous>:1:5
+sub @ VM1587:6
+(anonymous) @ VM1749:1
+var z=calc();
+undefined
+z
+(2) [ƒ, ƒ]
+z[1](10,20)
+-10
+z[0](10,20)
+30
+z
+(2) [ƒ, ƒ]0: ƒ (x,y)1: ƒ (a,b)length: 2[[Prototype]]: Array(0)
+function calc(){
+    var add= function adder(x,y){
+        return x+y;
+    }
+    var sub=function subtractor(a,b){
+        return a-b;
+    }
+    return [add,sub];
+}
+undefined
+var z=calc();
+undefined
+z
+(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtractor(a,b)length: 2[[Prototype]]: Array(0)
+z[0](10,20)
+30
+z[1](10,20)
+-10
+z
+(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtractor(a,b)length: 2[[Prototype]]: Array(0)
+function calc(){
+     function adder(x,y){
+        return x+y;
+    }
+    function subtractor(a,b){
+        return a-b;
+    }
+    return [adder,subtractor];
+}
+undefined
+var a=calc()
+undefined
+a
+(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtractor(a,b)length: 2[[Prototype]]: Array(0)
+a[0]
+ƒ adder(x,y){
+        return x+y;
+    }
+adder()
+VM2023:1 Uncaught ReferenceError: adder is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2023:1
+function calc(){
+    var add= function adder(x,y){
+        return x+y;
+    }
+    var sub=function subtractor(a,b){
+        return a-b;
+    }
+    return {add,sub};
+}
+undefined
+var a=calc()
+undefined
+a
+{add: ƒ, sub: ƒ}add: ƒ adder(x,y)sub: ƒ subtractor(a,b)[[Prototype]]: Object
+a.adder(10,20)
+VM2115:1 Uncaught TypeError: a.adder is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM2115:1
+a
+{add: ƒ, sub: ƒ}
+a.add(10,20)
+30

@@ -1,0 +1,126 @@
+var a=10;
+undefined
+var b=a;
+undefined
+b
+10
+a++;
+10
+a
+11
+b
+10
+var arr1=[10,20,30,40]
+undefined
+var arr2=arr1;
+undefined
+arr1.push(111111)
+5
+arr1
+(5) [10, 20, 30, 40, 111111]
+arr1.pop();
+111111
+arr1
+(4) [10, 20, 30, 40]
+arr1.push(10000)
+5
+arr1
+(5) [10, 20, 30, 40, 10000]
+arr2
+(5) [10, 20, 30, 40, 10000]
+arr2.pop();
+10000
+arr2
+(4) [10, 20, 30, 40]
+arr1
+(4) [10, 20, 30, 40]
+var obj1={name:"priya",lastname:"sharma"}
+undefined
+var obj2=obj1
+undefined
+obj2
+{name: 'priya', lastname: 'sharma'}
+obj1
+{name: 'priya', lastname: 'sharma'}
+obj1.department="IT"
+'IT'
+obj1
+{name: 'priya', lastname: 'sharma', department: 'IT'}
+obj2
+{name: 'priya', lastname: 'sharma', department: 'IT'}
+obj
+VM717:1 Uncaught ReferenceError: obj is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM717:1
+obj1
+{name: 'priya', lastname: 'sharma', department: 'IT'}
+typeof obj1
+'object'
+obj="priya"
+'priya'
+typeof obj1
+'object'
+obj1="priya"
+'priya'
+typeof obj1
+'string'
+obj2
+{name: 'priya', lastname: 'sharma', department: 'IT'}department: "IT"lastname: "sharma"name: "priya"[[Prototype]]: Object
+typeof obj2
+'object'
+obj2=null;
+null
+typeof obj2
+'object'
+obj2
+null
+var a=10
+undefined
+a
+10
+typeof a
+'number'
+a="priya"
+'priya'
+a
+'priya'
+typeof a
+'string'
+arr
+VM1050:1 Uncaught ReferenceError: arr is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1050:1
+arr1
+(4) [10, 20, 30, 40]
+    arr1.pop()
+40
+arr1
+(3) [10, 20, 30]
+a
+'priya'
+a.toUpperCase()
+'PRIYA'
+a
+'priya'
+var surname= new String("priya")
+undefined
+typeof surname
+'object'
+surname
+String {'priya'}
+surname.toUpperCase()
+'PRIYA'
+surname
+String {'priya'}
+a=10
+10
+var b=new Number(10)
+undefined
+b
+Number {10}
+typeof b
+'object'
+undefined==null
+true
+a=10
+10
