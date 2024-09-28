@@ -1,0 +1,11 @@
+for loop ,while 
+dowhile loop
+
+
+1.print star(*) 20 time
+
+2.print factorial of a number
+
+3.write a function which checks that an entered number is even  or odd?
+
+4.table print

@@ -1,0 +1,79 @@
+console.dir(Array)
+VM72:1 ƒ Array()from: ƒ from()fromAsync: ƒ fromAsync()isArray: ƒ isArray()length: 1name: "Array"of: ƒ of()prototype: [at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]Symbol(Symbol.species): ƒ Array()Symbol(Symbol.species): ƒ Array()arguments: (...)caller: (...)[[Prototype]]: ƒ ()[[Scopes]]: Scopes[0]
+undefined
+function add(){
+    console.log('i am add fn');
+}
+undefined
+console.dir(add)
+VM239:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {}[[FunctionLocation]]: VM186:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function add(x,y){
+    console.log('i am add fn',x,y);
+}
+undefined
+add(10,20)
+VM270:2 i am add fn 10 20
+undefined
+function add(x,y){
+    console.log('i am add fn',x,y);
+        console.log('arguments are ',arguments);
+}
+undefined
+add.length
+2
+function add(){
+    console.log('i am add fn');
+}
+undefined
+add.length
+0
+function add(x,y){
+    console.log('i am add fn',x,y);
+        console.log('arguments are ',arguments);
+}
+undefined
+add(10,20,30,40,50,60)
+VM487:2 i am add fn 10 20
+VM487:3 arguments are  Arguments(6) [10, 20, 30, 40, 50, 60, callee: ƒ, Symbol(Symbol.iterator): ƒ]0: 101: 202: 303: 404: 505: 60callee: ƒ add(x,y)length: 6Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+undefined
+function add(){
+    console.log('i am add fn',arguments);
+}
+undefined
+add(10,20,30,40,50,60,'priya',78,97,877)
+VM590:2 i am add fn Arguments(10) [10, 20, 30, 40, 50, 60, 'priya', 78, 97, 877, callee: ƒ, Symbol(Symbol.iterator): ƒ]0: 101: 202: 303: 404: 505: 606: "priya"7: 788: 979: 877callee: ƒ add()length: 10Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+undefined
+add(10,20,30,40,50,60,'priya',78,97,877)
+VM590:2 i am add fn Arguments(10) [10, 20, 30, 40, 50, 60, 'priya', 78, 97, 877, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+function add(...z){
+    console.log('i am add fn',z);
+}
+undefined
+add(10,20,30,40,50,60,'priya',78,97,877)
+VM763:2 i am add fn (10) [10, 20, 30, 40, 50, 60, 'priya', 78, 97, 877]
+undefined
+function add(x,y,...z){
+    console.log('i am add fn',x);
+    console.log('i am add fn',y);
+    console.log('i am add fn',z);
+}
+undefined
+add(10,20,30,40,50,60)
+VM803:2 i am add fn 10
+VM803:3 i am add fn 20
+VM803:4 i am add fn (4) [30, 40, 50, 60]0: 301: 402: 503: 60length: 4[[Prototype]]: Array(0)
+undefined
+function add(...x,y,...z){
+    console.log('i am add fn',x);
+    console.log('i am add fn',y);
+    console.log('i am add fn',z);
+}
+VM839:1 Uncaught SyntaxError: Rest parameter must be last formal parameter
+function add(...x,y){
+    console.log('i am add fn',x);
+    console.log('i am add fn',y);
+    console.log('i am add fn',z);
+}
+VM846:1 Uncaught SyntaxError: Rest parameter must be last formal parameter

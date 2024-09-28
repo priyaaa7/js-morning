@@ -1,0 +1,62 @@
+var arr1=[10,20,30,40,50];
+undefined
+var arr2=[100,200,300,400]
+undefined
+var arr3=[arr1,arr2]
+undefined
+arr3
+(2) [Array(5), Array(4)]0: (5) [10, 20, 30, 40, 50]1: (4) [100, 200, 300, 400]length: 2[[Prototype]]: Array(0)
+arr3[0]
+(5) [10, 20, 30, 40, 50]
+arr3[0].pop()
+50
+arr3
+(2) [Array(4), Array(4)]0: (4) [10, 20, 30, 40]1: (4) [100, 200, 300, 400]length: 2[[Prototype]]: Array(0)
+arr1
+(4) [10, 20, 30, 40]
+var arr3=[...arr1,...arr2]
+undefined
+arr3
+(8) [10, 20, 30, 40, 100, 200, 300, 400]0: 101: 202: 303: 404: 1005: 2006: 3007: 400length: 8[[Prototype]]: Array(0)
+arr3.pop()
+400
+arr3
+(7) [10, 20, 30, 40, 100, 200, 300]0: 101: 202: 303: 404: 1005: 2006: 300length: 7[[Prototype]]: Array(0)
+arr1
+(4) [10, 20, 30, 40]
+arr2
+(4) [100, 200, 300, 400]
+var obj1={name:'priya',id:200,address:'xyz',department:'IT'}
+undefined
+var obj2={ha:11010,ta:8189,HRA:8718}
+undefined
+var obj3={obj1,obj2}
+undefined
+obj3
+{obj1: {…}, obj2: {…}}obj1: {name: 'priya', id: 200, address: 'xyz', department: 'IT'}obj2: {ha: 11010, ta: 8189, HRA: 8718}[[Prototype]]: Object
+obj1.name='neha'
+'neha'
+obj1
+{name: 'neha', id: 200, address: 'xyz', department: 'IT'}
+obj3
+{obj1: {…}, obj2: {…}}obj1: {name: 'neha', id: 200, address: 'xyz', department: 'IT'}obj2: {ha: 11010, ta: 8189, HRA: 8718}[[Prototype]]: Object
+var obj3={...obj1,...obj2}
+undefined
+obj3
+{name: 'neha', id: 200, address: 'xyz', department: 'IT', ha: 11010, …}HRA: 8718address: "xyz"department: "IT"ha: 11010id: 200name: "neha"ta: 8189[[Prototype]]: Object
+obj3.name='priya'
+'priya'
+obj3
+{name: 'priya', id: 200, address: 'xyz', department: 'IT', ha: 11010, …}
+obj1
+{name: 'neha', id: 200, address: 'xyz', department: 'IT'}
+var obj2={ha:11010,ta:8189,HRA:8718,department:"business"}
+undefined
+var obj3={...obj1,...obj2}
+undefined
+obj1
+{name: 'neha', id: 200, address: 'xyz', department: 'IT'}
+obj2
+{ha: 11010, ta: 8189, HRA: 8718, department: 'business'}
+obj3
+{name: 'neha', id: 200, address: 'xyz', department: 'business', ha: 11010, …}HRA: 8718address: "xyz"department: "business"ha: 11010id: 200name: "neha"ta: 8189[[Prototype]]: Object
