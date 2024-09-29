@@ -1,0 +1,23 @@
+var obj={name:'priya',lastname:'sharma'};
+undefined
+for(var i in obj){
+    console.log(i);
+    console.log(obj[i]);
+}
+VM562:2 name
+VM562:3 priya
+VM562:2 lastname
+VM562:3 sharma
+undefined
+var arr = [1000,2000,3000,4000,5000];
+
+undefined
+for(var i of arr){
+    console.log('i is ',i)
+}
+VM593:2 i is  1000
+VM593:2 i is  2000
+VM593:2 i is  3000
+VM593:2 i is  4000
+VM593:2 i is  5000
+undefined

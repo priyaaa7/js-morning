@@ -1,0 +1,159 @@
+function display(){
+    if(10>2){
+       if(1000>4){
+           console.log('a is ',a);
+       } 
+    }
+}
+undefined
+display()
+VM182:4 Uncaught ReferenceError: a is not defined
+    at display (<anonymous>:4:32)
+    at <anonymous>:1:1
+display @ VM182:4
+(anonymous) @ VM208:1
+var arr=[10,20,30,40,50]
+undefined
+for(var i=0;i<arr.length;i++){
+}
+undefined
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+VM392:2 10
+VM392:2 20
+VM392:2 30
+VM392:2 40
+VM392:2 50
+undefined
+function printIt(element){
+    console.log(element);
+}
+undefined
+printIt(100)
+VM529:2 100
+undefined
+arr
+(5) [10, 20, 30, 40, 50]
+arr.forEach(printIt)
+VM529:2 10
+VM529:2 20
+VM529:2 30
+VM529:2 40
+VM529:2 50
+undefined
+arr.forEach((element)=>{console.log(element)})
+VM747:1 10
+VM747:1 20
+VM747:1 30
+VM747:1 40
+VM747:1 50
+undefined
+arr.forEach((element)=>element)
+undefined
+arr
+(5) [10, 20, 30, 40, 50]
+arr=[10,20,10,30,10,40]
+(6) [10, 20, 10, 30, 10, 40]0: 101: 202: 103: 304: 105: 40length: 6[[Prototype]]: Array(0)
+arr.find(ele=>ele===10)
+10
+arr.find(ele=>ele===40)
+40
+arr.findIndex(ele=>ele===10)
+0
+arr.filter(element=>element===10)
+(3) [10, 10, 10]
+arr.filter(element=>element>10)
+(3) [20, 30, 40]
+arr.filter(element=>element>100)
+[]length: 0[[Prototype]]: Array(0)
+var arr2= arr.filter(ele=>ele)
+undefined
+arr2
+(6) [10, 20, 10, 30, 10, 40]
+arr2.pop()
+40
+arr2
+(5) [10, 20, 10, 30, 10]
+arr
+(6) [10, 20, 10, 30, 10, 40]
+arr.map(ele=>ele+1000)
+(6) [1010, 1020, 1010, 1030, 1010, 1040]
+var prices=[100,302,434,121]
+undefined
+var pricesWithGST= prices.map(ele=>ele+ele*0.18)
+undefined
+pricesWithGST
+(4) [118, 356.36, 512.12, 142.78]0: 1181: 356.362: 512.123: 142.78length: 4[[Prototype]]: Array(0)
+arr
+(6) [10, 20, 10, 30, 10, 40]
+arr.some(ele=>ele===20)
+true
+arr.some(ele=>ele===200)
+false
+arr.every(ele=>ele>0)
+true
+arr.every(ele=>ele>200)
+false
+arr.every(ele=>ele===10)
+false
+arr
+(6) [10, 20, 10, 30, 10, 40]
+arr.push(111)
+7
+arr
+(7) [10, 20, 10, 30, 10, 40, 111]
+arr.shift()
+10
+arr
+(6) [20, 10, 30, 10, 40, 111]
+arr.unshift(1111111)
+7
+arr
+(7) [1111111, 20, 10, 30, 10, 40, 111]0: 11111111: 202: 10length: 3[[Prototype]]: Array(0)
+arr.splice(3)
+(4) [30, 10, 40, 111]
+arr
+(3) [1111111, 20, 10]0: 11111111: 202: 10length: 3[[Prototype]]: Array(0)
+arr.splice(0)
+(3) [1111111, 20, 10]
+arr
+[]
+arr=[1111111, 20, 10, 30, 10, 40, 111]
+(7) [1111111, 20, 10, 30, 10, 40, 111]
+arr.splice(3,0,1000)
+[]
+arr
+(8) [1111111, 20, 10, 1000, 30, 10, 40, 111]0: 11111111: 202: 103: 10004: 305: 106: 407: 111length: 8[[Prototype]]: Array(0)
+arr.splice(5,1,'priya')
+[10]
+arr
+(8) [1111111, 20, 10, 1000, 30, 'priya', 40, 111]0: 11111111: 202: 103: 10004: 305: "priya"6: 407: 111length: 8[[Prototype]]: Array(0)
+arr.splice(3,3)
+(3) [1000, 30, 'priya']
+arr
+(5) [1111111, 20, 10, 40, 111]
+arr
+(5) [1111111, 20, 10, 40, 111]
+arr.sort((first,second)=>first-second)
+(5) [10, 20, 40, 111, 1111111]
+arr.sort((first,second)=>second-first)
+(5) [1111111, 111, 40, 20, 10]
+arr=['priya','neha','aman','yashi']
+(4) ['priya', 'neha', 'aman', 'yashi']
+arr.sort((first,second)=>second-first)
+(4) ['priya', 'neha', 'aman', 'yashi']
+arr.sort((first,second)=>first-second)
+(4) ['priya', 'neha', 'aman', 'yashi']
+'aman'-'priya'
+NaN
+"aman".localeCompare('priya')
+-1
+"priya".localeCompare('priya')
+0
+"priya".localeCompare('aman')
+1
+arr.sort((first,second)=>first.localeCompare(second))
+(4) ['aman', 'neha', 'priya', 'yashi']
+arr.sort((first,second)=>second.localeCompare(first))
+(4) ['yashi', 'priya', 'neha', 'aman']

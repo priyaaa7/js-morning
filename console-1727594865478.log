@@ -1,0 +1,33 @@
+ let s=0;
+for(var i=0;i<100;i++){
+    s=s+i; 
+}
+  console.log(s)
+VM345:5 4950
+undefined
+for(var i=0;i<10;i++){
+    //code
+    console.log(typeof i);
+    console.log(i);
+}
+VM351:3 number
+VM351:4 0
+VM351:3 number
+VM351:4 1
+VM351:3 number
+VM351:4 2
+VM351:3 number
+VM351:4 3
+VM351:3 number
+VM351:4 4
+VM351:3 number
+VM351:4 5
+VM351:3 number
+VM351:4 6
+VM351:3 number
+VM351:4 7
+VM351:3 number
+VM351:4 8
+VM351:3 number
+VM351:4 9
+undefined
