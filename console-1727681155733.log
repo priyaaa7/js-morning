@@ -1,0 +1,71 @@
+var arr = [1000,2000,3000,4000,5000];
+
+undefined
+var sum=0;
+for(var i=0;i<arr.length;i++){
+   sum=sum+arr[i]; 
+}
+console.log(sum)
+VM300:5 15000
+undefined
+arr.reduce((sum,element)=>{
+    console.log(`sum is ${sum} element is ${element}`)
+})
+
+VM468:2 sum is 1000 element is 2000
+VM468:2 sum is undefined element is 3000
+VM468:2 sum is undefined element is 4000
+VM468:2 sum is undefined element is 5000
+undefined
+arr.reduce((sum,element)=>{
+    console.log(`sum is ${sum} element is ${element}`)
+    sum=sum+element
+    return sum;
+})
+
+VM499:2 sum is 1000 element is 2000
+VM499:2 sum is 3000 element is 3000
+VM499:2 sum is 6000 element is 4000
+VM499:2 sum is 10000 element is 5000
+15000
+arr.reduce((sum,element)=>{
+    sum=sum+element
+    return sum;
+})
+
+15000
+arr.reduce((sum,e)=>{
+    console.log(`sum is ${sum} element is ${element}`)
+    sum=sum+e
+    return sum
+},0)
+VM630:2 Uncaught ReferenceError: element is not defined
+    at <anonymous>:2:45
+    at Array.reduce (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM630:2
+(anonymous) @ VM630:1
+arr.reduce((sum,e)=>{
+    console.log(`sum is ${sum} element is ${e}`)
+    sum=sum+e
+    return sum
+},0)
+VM637:2 sum is 0 element is 1000
+VM637:2 sum is 1000 element is 2000
+VM637:2 sum is 3000 element is 3000
+VM637:2 sum is 6000 element is 4000
+VM637:2 sum is 10000 element is 5000
+15000
+arr.reduce((sum,e)=>{
+    console.log(`sum is ${sum} element is ${e}`)
+    sum=sum+e
+    return sum
+},'')
+VM647:2 sum is  element is 1000
+VM647:2 sum is 1000 element is 2000
+VM647:2 sum is 10002000 element is 3000
+VM647:2 sum is 100020003000 element is 4000
+VM647:2 sum is 1000200030004000 element is 5000
+'10002000300040005000'
+'100'+'200'
+'100200'

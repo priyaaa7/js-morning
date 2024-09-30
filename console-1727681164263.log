@@ -1,0 +1,74 @@
+function likes(){
+    let count=0;
+    count++;
+    return count;
+}
+undefined
+likes()
+1
+likes()
+1
+function likes(){
+    let count=0;
+    count++;
+    return count;
+}
+undefined
+likes()
+1
+likes()
+1
+likes()
+1
+let count=0;
+function likes(){
+    count++;
+    return count;
+}
+undefined
+likes()
+1
+likes()
+2
+likes()
+3
+likes()
+4
+count=100
+100
+likes()
+101
+likes()
+102
+likes()
+103
+function init(){
+let count=0;
+let likes= function (){
+    count++;
+    return count;
+}
+    return likes;
+}
+undefined
+var fn= init()
+undefined
+fn
+ƒ (){
+    count++;
+    return count;
+}
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4
+fn()
+5
+fn()
+6
+fn()
+7

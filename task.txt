@@ -1,11 +1,12 @@
-for loop ,while 
-dowhile loop
+1. find the element in an array and find its occurrence
 
+eg- arr=[10,20,30,10,40,10]
 
-1.print star(*) 20 time
+search element-10
+output 3
 
-2.print factorial of a number
+2. copy the array elements without using spread operator
 
-3.write a function which checks that an entered number is even  or odd?
+3.given an array , u have to find the highest element
 
-4.table print
+4. find out how many ways you can delete an element from array

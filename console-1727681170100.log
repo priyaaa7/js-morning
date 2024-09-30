@@ -1,0 +1,66 @@
+let fn= (function(){
+let count=0;
+    let likes=function(){
+        count++;
+        return count;
+    }
+    return likes;
+})();
+undefined
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4
+fn()
+5
+fn()
+6
+fn()
+7
+function loop(){
+    for(var i=0;i<5;i++){
+        console.log(i);
+    }
+}
+undefined
+loop()
+VM375:3 0
+VM375:3 1
+VM375:3 2
+VM375:3 3
+VM375:3 4
+undefined
+function loop(){
+    console.log('value of i is ',i);
+    for(var i=0;i<5;i++){
+        console.log(i);
+    }
+}
+undefined
+loop()
+VM470:2 value of i is  undefined
+VM470:4 0
+VM470:4 1
+VM470:4 2
+VM470:4 3
+VM470:4 4
+undefined
+function loop(){
+    console.log('value of i is ',i);
+    (function(){
+    for(var i=0;i<5;i++){
+        console.log(i);
+    }
+})();
+}
+undefined
+loop()
+VM503:2 Uncaught ReferenceError: i is not defined
+    at loop (<anonymous>:2:34)
+    at <anonymous>:1:1
+loop @ VM503:2
+(anonymous) @ VM508:1

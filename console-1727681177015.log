@@ -1,0 +1,138 @@
+console.log('1st line')
+console.log('2nd line')
+console.log('3rd line')
+VM97:1 1st line
+VM97:2 2nd line
+VM97:3 3rd line
+undefined
+console.log('1st line'
+console.log('2nd line')
+console.log('3rd line')
+VM104:1 Uncaught SyntaxError: missing ) after argument list
+function doBiggerTask(){
+        for(var i=0;i<100000;i++){}
+
+}
+undefined
+function doBiggerTask(){
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<100000;j++){  
+            }
+        }
+return 'big task done';
+}
+undefined
+console.log('1st line');
+console.log(doBiggerTask())
+console.log('3rd line')
+VM321:1 1st line
+VM321:2 big task done
+VM321:3 3rd line
+undefined
+function doBiggerTask(){
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<200000;j++){  
+            }
+        }
+return 'big task done';
+}
+undefined
+console.log('1st line');
+console.log(doBiggerTask())
+console.log('3rd line')
+VM329:1 1st line
+VM329:2 big task done
+VM329:3 3rd line
+undefined
+function doBiggerTask(num){
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<200000;j++){  
+            }
+        }
+    console.log(num**3);
+return 'big task done';
+}
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM385:1 1st line
+VM378:6 8
+VM385:2 big task done
+VM385:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM387:1 1st line
+VM378:6 8
+VM387:2 big task done
+VM387:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM389:1 1st line
+VM378:6 8
+VM389:2 big task done
+VM389:3 3rd line
+undefined
+let cache={};
+function doBiggerTask(num){
+    if(cache[num]){
+        return cache[num];
+    }
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<200000;j++){  
+            }
+        }
+    cache[num]=num**3;
+return cache[num];
+}
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM506:1 1st line
+VM506:2 8
+VM506:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM508:1 1st line
+VM508:2 8
+VM508:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM510:1 1st line
+VM510:2 8
+VM510:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(2))
+console.log('3rd line')
+VM512:1 1st line
+VM512:2 8
+VM512:3 3rd line
+undefined
+cache
+{2: 8}
+console.log('1st line');
+console.log(doBiggerTask(5))
+console.log('3rd line')
+VM536:1 1st line
+VM536:2 125
+VM536:3 3rd line
+undefined
+console.log('1st line');
+console.log(doBiggerTask(5))
+console.log('3rd line')
+VM538:1 1st line
+VM538:2 125
+VM538:3 3rd line
+undefined
+cache
+{2: 8, 5: 125}

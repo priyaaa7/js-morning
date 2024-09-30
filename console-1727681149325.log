@@ -1,0 +1,12 @@
+var arr=[{name:'priya',id:100},{department:"IT",id:1000},{lastname:'sharma',id:999}]
+undefined
+arr
+(3) [{…}, {…}, {…}]0: {name: 'priya', id: 100}1: {department: 'IT', id: 1000}2: {lastname: 'sharma', id: 999}length: 3[[Prototype]]: Array(0)
+arr.sort((a,b)=>a.id-b.id)
+(3) [{…}, {…}, {…}]0: {name: 'priya', id: 100}1: {lastname: 'sharma', id: 999}2: {department: 'IT', id: 1000}length: 3[[Prototype]]: Array(0)
+arr.sort((a,b)=>a-b)
+(3) [{…}, {…}, {…}]0: {name: 'priya', id: 100}1: {lastname: 'sharma', id: 999}2: {department: 'IT', id: 1000}length: 3[[Prototype]]: Array(0)
+arr.sort((a,b)=>b-a)
+(3) [{…}, {…}, {…}]0: {name: 'priya', id: 100}1: {lastname: 'sharma', id: 999}2: {department: 'IT', id: 1000}length: 3[[Prototype]]: Array(0)
+arr.sort((a,b)=>b.id-a.id)
+(3) [{…}, {…}, {…}]0: {department: 'IT', id: 1000}1: {lastname: 'sharma', id: 999}2: {name: 'priya', id: 100}length: 3[[Prototype]]: Array(0)
