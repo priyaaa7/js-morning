@@ -1,0 +1,210 @@
+function print(){
+console.log('i am a print fn');
+}
+undefined
+setTimeout(print,5000);
+1
+VM171:2 i am a print fn
+var time=setTimeout(print,10000);
+undefined
+time
+2
+clearTimeout(time)
+undefined
+console.log('1st line')
+setTimeout(print,5000)
+console.log('2nd line')
+console.log('4h line')
+VM461:1 1st line
+VM461:3 2nd line
+VM461:4 4h line
+undefined
+VM171:2 i am a print fn
+console.log('1st line')
+setTimeout(print,5000)
+console.log('2nd line')
+console.log('4h line')
+VM463:1 1st line
+VM463:3 2nd line
+VM463:4 4h line
+undefined
+VM171:2 i am a print fn
+setTimeout(()=>{
+    console.log('i am a print callback fn')
+},5000);
+5
+VM556:2 i am a print callback fn
+function doBiggerTask(num){
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<100000;j++){  
+            }
+        }
+return num**3 ;}
+
+undefined
+function doBiggerTask(num){
+        for(var i=0;i<100000;i++){
+            for(var j=0;j<100000;j++){  
+            }
+        }
+return num**3 ;}
+
+undefined
+console.log('1st line')
+console.log(doBiggerTask(3))
+console.log('2nd line')
+console.log('4h line')
+VM866:1 1st line
+VM866:2 27
+VM866:3 2nd line
+VM866:4 4h line
+undefined
+function doBiggerTask(num){
+      setTimeout(()=>{
+            for(var i=0;i<100000;i++){
+            for(var j=0;j<100000;j++){  
+            }
+        }
+          console.log('looping done')
+      },1000)
+return num**3 ;}
+
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4))
+console.log('2nd line')
+console.log('4h line')
+VM960:1 1st line
+VM960:2 64
+VM960:3 2nd line
+VM960:4 4h line
+undefined
+VM950:7 looping done
+function doBiggerTask(num){
+      setTimeout(()=>{
+            for(var i=0;i<100000;i++){
+            for(var j=0;j<20000;j++){  
+            }
+        }
+          console.log('looping done')
+          return 'priya';
+      },1000)
+return num**3 ;}
+
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4))
+console.log('2nd line')
+console.log('4h line')
+VM988:1 1st line
+VM988:2 64
+VM988:3 2nd line
+VM988:4 4h line
+undefined
+VM985:7 looping done
+function doBiggerTask(num,callback){
+      setTimeout(()=>{
+            for(var i=0;i<100000;i++){
+            for(var j=0;j<20000;j++){  
+            }
+        }
+          console.log('looping done')
+          callback('priya');
+          // return 'priya';
+      },1000)
+return num**3 ;}
+
+undefined
+function show(result){
+    console.log('result received',result)
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4,show))
+console.log('2nd line')
+console.log('4h line')
+VM1226:1 1st line
+VM1226:2 64
+VM1226:3 2nd line
+VM1226:4 4h line
+undefined
+VM1030:7 looping done
+VM1181:2 result received priya
+var temp={delhi:'35 degrees',mumbai:'25 degrees'};
+function weatherData(callback,city){
+    setTimeout(()=>{
+        callback(temp[city]);
+    },5000)
+}
+undefined
+function getWeatherData(result){
+    console.log('Current temperature is ',result)
+}
+undefined
+weatherData(getWeatherData,'delhi')
+undefined
+VM1663:2 Current temperature is  35 degrees
+weatherData(getWeatherData,'mumbai')
+undefined
+VM1663:2 Current temperature is  25 degrees
+console.log('1st line')
+weatherData(getWeatherData,'delhi')
+console.log('3rd lin')
+VM1826:1 1st line
+VM1826:3 3rd lin
+undefined
+VM1663:2 Current temperature is  35 degrees
+var temp={delhi:'35 degrees',mumbai:'25 degrees'};
+function weatherData(successCallback,city,errorCallback){
+    setTimeout(()=>{
+        if(temp[city]){
+        callback(temp[city]);
+        }
+        else{
+            errorCallback('cant fetch data!!!!!!!!!');
+        }
+    },5000)
+}
+undefined
+function tohandleError(err){
+    console.log(err)
+}
+undefined
+console.log('1st line')
+weatherData(getWeatherData,'delhi',tohandleError)
+console.log('3rd lin')
+VM2058:1 1st line
+VM2058:3 3rd lin
+undefined
+VM1924:5 Uncaught ReferenceError: callback is not defined
+    at <anonymous>:5:9
+(anonymous) @ VM1924:5
+setTimeout
+weatherData @ VM1924:3
+(anonymous) @ VM2058:2
+var temp={delhi:'35 degrees',mumbai:'25 degrees'};
+function weatherData(successCallback,city,errorCallback){
+    setTimeout(()=>{
+        if(temp[city]){
+        successCallback(temp[city]);
+        }
+        else{
+            errorCallback('cant fetch data!!!!!!!!!');
+        }
+    },5000)
+}
+undefined
+console.log('1st line')
+weatherData(getWeatherData,'delhi',tohandleError)
+console.log('3rd lin')
+VM2081:1 1st line
+VM2081:3 3rd lin
+undefined
+VM1663:2 Current temperature is  35 degrees
+console.log('1st line')
+weatherData(getWeatherData,'gujarat',tohandleError)
+console.log('3rd lin')
+VM2099:1 1st line
+VM2099:3 3rd lin
+undefined
+VM2042:2 cant fetch data!!!!!!!!!
