@@ -1,0 +1,280 @@
+var t=setInterval(()=>{
+    console.log('hello')
+},2000)
+undefined
+VM27:2 hello
+VM27:2 hello
+VM27:2 hello
+VM27:2 hello
+VM27:2 hello
+VM27:2 hello
+clearInterval(t)
+undefined
+let matchScore=0;
+function liveScore(callback){
+    setInterval(()=>{
+        
+    },2000)
+}
+undefined
+let matchScore=0;
+let time;
+function liveScore(callback){
+    time=setInterval(()=>{
+        matchScore=matchScore+10;
+        callback(matchScore);
+    },2000)
+}
+undefined
+function showScore(result){
+    console.log('score is ',result)
+}
+undefined
+liveScore(showScore)
+undefined
+VM313:2 score is  10
+VM313:2 score is  20
+VM313:2 score is  30
+VM313:2 score is  40
+VM313:2 score is  50
+VM313:2 score is  60
+VM313:2 score is  70
+VM313:2 score is  80
+clearInterval(time)
+undefined
+function showError(error){
+    console.log('error during match',err)
+}
+undefined
+let matchScore=0;
+let time;
+function liveScore(successCallback,errorCallback){
+    time=setInterval(()=>{
+        matchScore=matchScore+10;
+        if(matchScore>100){
+            errorCallback('some error occure')
+            clearInterval(time);
+        }
+        else{
+        successCallback(matchScore);}
+    },2000)
+}
+undefined
+liveScore(showScore)
+undefined
+VM313:2 score is  10
+VM313:2 score is  20
+VM313:2 score is  30
+VM313:2 score is  40
+VM313:2 score is  50
+VM313:2 score is  60
+VM313:2 score is  70
+VM313:2 score is  80
+VM313:2 score is  90
+VM313:2 score is  100
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+VM645:7 Uncaught TypeError: errorCallback is not a function
+    at <anonymous>:7:13
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM653:1
+clearInterval(time)
+undefined
+liveScore(showScore,showError)
+undefined
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+VM517:2 Uncaught ReferenceError: err is not defined
+    at showError (<anonymous>:2:38)
+    at <anonymous>:7:13
+showError @ VM517:2
+(anonymous) @ VM645:7
+setInterval
+liveScore @ VM645:4
+(anonymous) @ VM715:1
+clearInterval(time)
+undefined
+function showError(error){
+    console.log('error during match',error)
+}
+undefined
+liveScore(showScore,showError)
+undefined
+VM772:2 error during match some error occure
+let matchScore=0;
+let time;
+function liveScore(successCallback,errorCallback){
+    time=setInterval(()=>{
+        matchScore=matchScore+10;
+        if(matchScore>100){
+            errorCallback('some error occure')
+            clearInterval(time);
+        }
+        else{
+        successCallback(matchScore);}
+    },2000)
+}
+undefined
+liveScore(showScore,showError)
+undefined
+VM313:2 score is  10
+VM313:2 score is  20
+VM313:2 score is  30
+VM313:2 score is  40
+VM313:2 score is  50
+VM313:2 score is  60
+VM313:2 score is  70
+VM313:2 score is  80
+VM313:2 score is  90
+VM313:2 score is  100
+VM772:2 error during match some error occure
+var str= new String('priya')
+undefined
+str
+String {'priya'}

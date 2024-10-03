@@ -1,0 +1,37 @@
+function user(callback){
+setTimeout(()=>{
+    console.log('i am a user function');
+    callback();
+},4000)
+}
+undefined
+function userPost(callback){
+    setTimeout(()=>{
+        console.log('these are the posts');
+        callback();
+    },4000);
+}
+undefined
+function userComments(callback){
+    setTimeout(()=>{
+        console.log('comments are');
+        callback();
+    },3000);
+}
+undefined
+user(()=>{
+    console.log('login successfull....');
+    userPost(()=>{
+        console.log('post loaded successfully..');
+        userComments(()=>{
+            console.log('comments loaded successfully...')
+        },(error)=>{console.log('err ',err)});
+    },(error)=>{console.log('err ',err)});
+},(error)=>{console.log('err ',err)})
+undefined
+VM820:3 i am a user function
+VM902:2 login successfull....
+VM852:3 these are the posts
+VM902:4 post loaded successfully..
+VM897:3 comments are
+VM902:6 comments loaded successfully...

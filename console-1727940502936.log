@@ -1,0 +1,68 @@
+function doWork(num){
+   let p= new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        if(num>10){
+            reject('cant compute cube of number >10 ')
+        }
+          resolve(num**3)
+          
+      },5000); 
+   });
+    return p;
+}
+undefined
+doWork(5);
+Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: 125
+var p1= doWork(3);
+p1.then((data)=>{console.log(data)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM541:2 27
+var p1= doWork(100);
+p1.then((data)=>{console.log(data)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM555:2 cant compute cube of number >10 
+var p1= doWork(100);
+p1.then((data)=>{console.log(data)})
+Promise {<pending>}
+about:blank:1 Uncaught (in promise) cant compute cube of number >10 
+Promise.then
+(anonymous) @ VM561:2
+var singlePromise=Promise.all([doWork(2),doWork(3),doWork(5)])
+undefined
+var singlePromise=Promise.all([doWork(2),doWork(3),doWork(5)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM816:2 (3) [8, 27, 125]0: 81: 272: 125length: 3[[Prototype]]: Array(0)
+var singlePromise=Promise.all([doWork(2),doWork(3),doWork(50)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM823:2 cant compute cube of number >10 
+var singlePromise=Promise.allSettled([doWork(2),doWork(3),doWork(50)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM831:2 (3) [{…}, {…}, {…}]0: status: "fulfilled"value: 8[[Prototype]]: Object1: {status: 'fulfilled', value: 27}2: {status: 'rejected', reason: 'cant compute cube of number >10 '}length: 3[[Prototype]]: Array(0)
+function doWork(num,time){
+   let p= new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        if(num>10){
+            reject('cant compute cube of number >10 ')
+        }
+          resolve(num**3)
+          
+      },time); 
+   });
+    return p;
+}
+undefined
+var singlePromise=Promise.race([doWork(2,3000),doWork(3,2000),doWork(5,5000)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM938:2 27
+var singlePromise=Promise.race([doWork(2,3000),doWork(30,2000),doWork(5,5000)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM947:2 cant compute cube of number >10 
+var singlePromise=Promise.any([doWork(20,3000),doWork(30,2000),doWork(5,7000)])
+singlePromise.then((result)=>{console.log(result)}).catch((err)=>console.log(err))
+Promise {<pending>}
+VM970:2 125
