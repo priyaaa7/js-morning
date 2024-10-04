@@ -1,0 +1,55 @@
+var URL=https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5
+VM174:1 Uncaught SyntaxError: Unexpected token ':'
+var URL="https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5"
+undefined
+var p= fetch(URL);
+undefined
+p
+Promise {<fulfilled>: Response}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: Responsebody: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: ""type: "cors"url: "https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5"[[Prototype]]: Response
+var p= fetch(URL);
+p.then(res=>console.log(res)).catch(err=>console.log(err))
+Promise {<pending>}
+VM402:2 Response {type: 'cors', url: 'https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5', redirected: false, status: 200, ok: true, …}body: ReadableStreamlocked: false[[Prototype]]: ReadableStreamcancel: ƒ cancel()getReader: ƒ getReader()locked: (...)pipeThrough: ƒ pipeThrough()pipeTo: ƒ pipeTo()tee: ƒ tee()values: ƒ values()constructor: ƒ ReadableStream()Symbol(Symbol.asyncIterator): ƒ values()Symbol(Symbol.toStringTag): "ReadableStream"get locked: ƒ locked()[[Prototype]]: ObjectbodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: ""type: "cors"url: "https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5"[[Prototype]]: Response
+var t=await fetch(URL)
+undefined
+t
+Response {type: 'cors', url: 'https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=&limit=5', redirected: false, status: 200, ok: true, …}
+JSON
+JSON {Symbol(Symbol.toStringTag): 'JSON', parse: ƒ, stringify: ƒ, rawJSON: ƒ, isRawJSON: ƒ}isRawJSON: ƒ isRawJSON()parse: ƒ parse()rawJSON: ƒ rawJSON()stringify: ƒ stringify()Symbol(Symbol.toStringTag): "JSON"[[Prototype]]: Object
+JSON.parse(t)
+VM581:1 Uncaught SyntaxError: Unexpected token 'o', "[object Response]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at <anonymous>:1:6
+(anonymous) @ VM580:1
+var p= await fetch(URL);
+var result= await p.json()
+undefined
+result
+{data: Array(0), meta: {…}, pagination: {…}}data: []length: 0[[Prototype]]: Array(0)meta: {status: 200, msg: 'OK', response_id: 'oaxmv95b0dxj901b1wgu3yth8o7mtjlskz79fj98'}pagination: {total_count: 0, count: 0, offset: 0}[[Prototype]]: Object
+var URL="https://api.giphy.com/v1/gifs/search?api_key=ZZxZkPVSkZ9f56jWXRN8PHwvCQHTAp8F&q=ironman&limit=5"
+undefined
+var p= await fetch(URL);
+var result= await p.json()
+undefined
+result
+{data: Array(5), meta: {…}, pagination: {…}}data: (5) [{…}, {…}, {…}, {…}, {…}]0: alt_text: ""analytics: {onload: {…}, onclick: {…}, onsent: {…}}analytics_response_payload: "e=ZXZlbnRfdHlwZT1HSUZfU0VBUkNIJmNpZD0yYzQ0OGVmYWVwYTd5MTllc2QzZ3Z6djIxMm51eDVrazRsenhsMTFsdjY2NG5mYWwmZ2lmX2lkPTZuOFFmb1FoSW9LV1I5dUx0NSZjdD1n"bitly_gif_url: "https://gph.is/g/E1LYYW1"bitly_url: "https://gph.is/g/E1LYYW1"content_url: ""embed_url: "https://giphy.com/embed/6n8QfoQhIoKWR9uLt5"id: "6n8QfoQhIoKWR9uLt5"images: {original: {…}, downsized: {…}, downsized_large: {…}, downsized_medium: {…}, downsized_small: {…}, …}import_datetime: "2023-12-31 12:29:48"is_sticker: 0rating: "g"slug: "man-marvel-iron-6n8QfoQhIoKWR9uLt5"source: ""source_post_url: ""source_tld: ""title: "Iron Man Wow GIF by Salih Kizilkaya"trending_datetime: "0000-00-00 00:00:00"type: "gif"url: "https://giphy.com/gifs/man-marvel-iron-6n8QfoQhIoKWR9uLt5"user: {avatar_url: 'https://media3.giphy.com/avatars/salihkizilkaya/MSwFTpurlY3b.jpg', banner_image: 'https://media3.giphy.com/headers/salihkizilkaya/ZmPKXxVYHfid.gif', banner_url: 'https://media3.giphy.com/headers/salihkizilkaya/ZmPKXxVYHfid.gif', profile_url: 'https://giphy.com/salihkizilkaya/', username: 'salihkizilkaya', …}username: "salihkizilkaya"[[Prototype]]: Object1: {type: 'gif', id: '8xomIW1DRelmo', url: 'https://giphy.com/gifs/marvel-avengers-8xomIW1DRelmo', slug: 'marvel-avengers-8xomIW1DRelmo', bitly_gif_url: 'http://gph.is/140FtJU', …}2: {type: 'gif', id: 'IJj3gzpSjt5zfP1gS5', url: 'https://giphy.com/gifs/marvel-robot-iron-IJj3gzpSjt5zfP1gS5', slug: 'marvel-robot-iron-IJj3gzpSjt5zfP1gS5', bitly_gif_url: 'https://gph.is/g/46ollgM', …}3: {type: 'gif', id: '3Kt9l1Xy9f5e1lyCyk', url: 'https://giphy.com/gifs/unlimitedsportsbrasil-unlimited-ironman-ironmanbrasil-3Kt9l1Xy9f5e1lyCyk', slug: 'unlimitedsportsbrasil-unlimited-ironman-ironmanbrasil-3Kt9l1Xy9f5e1lyCyk', bitly_gif_url: 'https://gph.is/g/4ALroMN', …}4: {type: 'gif', id: 'R8TJbbCR0gmr2v7cj4', url: 'https://giphy.com/gifs/yum-gasp-naughty-R8TJbbCR0gmr2v7cj4', slug: 'yum-gasp-naughty-R8TJbbCR0gmr2v7cj4', bitly_gif_url: 'https://gph.is/g/apo3ePW', …}length: 5[[Prototype]]: Array(0)meta: {status: 200, msg: 'OK', response_id: 'epa7y19esd3gvzv212nux5kk4lzxl11lv664nfal'}pagination: {total_count: 350, count: 5, offset: 0}[[Prototype]]: Object
+var URL2='https://newsapi.org/v2/top-headlines?country=us&apiKey=208765d1640d45e9a9badeb5873b54d0'
+undefined
+var p= await fetch(URL2);
+var result= await p.json()
+VM757:1 
+        
+        
+       GET https://newsapi.org/v2/top-headlines?country=us&apiKey=208765d1640d45e9a9badeb5873b54d0 426 (Upgrade Required)
+(anonymous) @ VM757:1
+undefined
+var URL2='https://newsapi.org/v2/top-headlines?country=us&apiKey=62c79cac6e9c4f4f8dce15c9b4a959a5'
+undefined
+var p= await fetch(URL2);
+var result= await p.json()
+VM766:1 
+        
+        
+       GET https://newsapi.org/v2/top-headlines?country=us&apiKey=62c79cac6e9c4f4f8dce15c9b4a959a5 426 (Upgrade Required)
+(anonymous) @ VM766:1
+undefined

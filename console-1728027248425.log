@@ -1,0 +1,28 @@
+var url='https://itunes.apple.com/search?term=jack+johnson'
+undefined
+var p= await fetch(url);
+var res=p.json();
+undefined
+res
+Promise {<fulfilled>: {…}}
+var p= await fetch(url);
+var res= await p.json();
+about:blank:1 Access to fetch at 'https://itunes.apple.com/search?term=jack+johnson' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+VM263:1 
+        
+        
+       GET https://itunes.apple.com/search?term=jack+johnson net::ERR_FAILED 200 (OK)
+(anonymous) @ VM263:1
+VM263:2 Uncaught TypeError: Failed to fetch
+    at <anonymous>:1:14
+(anonymous) @ VM263:1
+var url='https://newsapi.org/v2/top-headlines?country=us&apiKey=62c79cac6e9c4f4f8dce15c9b4a959a5'
+undefined
+var p= await fetch(url);
+var res= await p.json();
+VM282:1 
+        
+        
+       GET https://newsapi.org/v2/top-headlines?country=us&apiKey=62c79cac6e9c4f4f8dce15c9b4a959a5 426 (Upgrade Required)
+(anonymous) @ VM282:1
+undefined

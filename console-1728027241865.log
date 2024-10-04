@@ -1,0 +1,47 @@
+function cube(num,time){
+    console.log('start',num);
+    var promise =new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res(num**3);    
+        },time)
+    });
+    return promise;
+}
+undefined
+async function total(){
+    let sum= await cube(3,3000) +await cube(5,7000) +await cube(2,4000);
+    return sum;
+}
+undefined
+var p= total()
+VM261:2 start 3
+undefined
+VM261:2 start 5
+VM261:2 start 2
+var p= total()
+p.then(data=>console.log(data)).catch(err=>console.log(err))
+VM261:2 start 3
+Promise {<pending>}
+VM261:2 start 5
+VM261:2 start 2
+VM686:2 160
+p
+Promise {<fulfilled>: 160}
+var p=await total()
+
+VM261:2 start 3
+VM261:2 start 5
+VM261:2 start 2
+undefined
+p
+160
+total()
+VM261:2 start 3
+Promise {<pending>}
+VM261:2 start 5
+VM261:2 start 2
+await total()
+VM261:2 start 3
+VM261:2 start 5
+VM261:2 start 2
+160

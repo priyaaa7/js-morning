@@ -1,0 +1,91 @@
+function country(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('country info is');
+        },4000);
+    });
+    return pr;
+    
+}
+
+function states(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('states info is');
+        },4000);
+    });
+    return pr;
+    
+}
+function zone(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('zone info is');
+        },4000);
+    });
+    return pr;
+    
+}
+
+
+undefined
+function getData(){
+    const countriesData= country();
+    console.log('countries data fetched')
+const s= states();
+    console.log('states data fetched')
+    const z= zone();
+    console.log('zone data fetched')
+}
+
+
+undefined
+console.log('1st line')
+getData()
+console.log('3rd line')
+VM520:1 1st line
+VM283:3 countries data fetched
+VM283:5 states data fetched
+VM283:7 zone data fetched
+VM520:3 3rd line
+undefined
+async function getData(){
+    const countriesData= await country();
+    console.log('countries data fetched')
+const s=await states();
+    console.log('states data fetched')
+    const z= await zone();
+    console.log('zone data fetched')
+}
+
+
+undefined
+console.log('1st line')
+getData()
+console.log('3rd line')
+VM553:1 1st line
+VM553:3 3rd line
+undefined
+VM550:3 countries data fetched
+VM550:5 states data fetched
+VM550:7 zone data fetched
+async function getData(){
+    const countriesData= await country();
+    console.log('countries data fetched...........',countriesData)
+const s=await states();
+    console.log('states data fetched............',s)
+    const z= await zone();
+    console.log('zone data fetched..........',z)
+}
+
+
+undefined
+console.log('1st line')
+getData()
+console.log('3rd line')
+VM665:1 1st line
+VM665:3 3rd line
+undefined
+VM662:3 countries data fetched........... country info is
+VM662:5 states data fetched............ states info is
+VM662:7 zone data fetched.......... zone info is

@@ -1,0 +1,74 @@
+function country(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('country info is');
+        },4000);
+    });
+    return pr;
+    
+}
+
+function states(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('states info is');
+        },4000);
+    });
+    return pr;
+    
+}
+function zone(){
+    var pr=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('zone info is');
+        },4000);
+    });
+    return pr;
+    
+}
+
+
+undefined
+var p=country();
+p.then(()=>{
+    var p1=states();
+    console.log('countries data fetched successfully');
+    p1.then(
+        var p2=zone();
+    p2.then(()=>{
+        console.log('zones data fetched successfully')
+    }).catch(err=>console.log(err));
+    ).catch(err=>console.log(err));
+}).catch(err=>console.log(err))
+VM1119:6 Uncaught SyntaxError: Unexpected token 'var'
+var p=country();
+p.then(()=>{
+    var p1=states();
+    console.log('countries data fetched successfully');
+    p1.then(()=>{
+         var p2=zone();
+    p2.then(()=>{
+        console.log('zones data fetched successfully')
+    }).catch(err=>console.log(err));
+    } ).catch(err=>console.log(err));
+}).catch(err=>console.log(err))
+Promise {<pending>}
+VM1144:4 countries data fetched successfully
+VM1144:8 zones data fetched successfully
+var p=country();
+p.then((data)=>{
+    console.log('countries data fetched successfully....',data);
+    var p1=states();
+    
+    p1.then((data)=>{
+        console.log('states data fetched successfully....',data);
+         var p2=zone();
+    p2.then((data)=>{
+        console.log('zones data fetched successfully,,,,,',data)
+    }).catch(err=>console.log(err));
+    } ).catch(err=>console.log(err));
+}).catch(err=>console.log(err))
+Promise {<pending>}
+VM1255:3 countries data fetched successfully.... country info is
+VM1255:7 states data fetched successfully.... states info is
+VM1255:10 zones data fetched successfully,,,,, zone info is
